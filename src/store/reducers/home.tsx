@@ -1,5 +1,7 @@
 import { AnyAction } from "redux";
-export interface HomeState {}
+import { HomeState } from '@/typings/state'
+
+ 
 const initialState: HomeState = {};
 export default function (
   state: HomeState = initialState,
