@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: dandan.Wu
+ * @Date: 2021-01-20 13:43:15
+ * @LastEditTime: 2021-01-25 13:41:11
+ * @LastEditors: dandan.Wu
+ */
 
 
 // import { HomeState } from '@/store/reducers/home';
@@ -9,7 +16,7 @@
 import { RouterState } from 'connected-react-router';
  
 export interface HomeState{
- 
+  currentCategory: string;
 }
 
 export interface MineState{

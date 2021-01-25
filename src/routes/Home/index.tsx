@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: dandan.Wu
+ * @Date: 2021-01-19 13:43:41
+ * @LastEditTime: 2021-01-25 13:40:24
+ * @LastEditors: dandan.Wu
+ */
 import React,{ PropsWithChildren } from "react";
 import './index.less'
 import { RouteComponentProps } from 'react-router-dom';
@@ -15,7 +22,10 @@ type Props = PropsWithChildren<RouteComponentProps<Params> & StateProps & Dispat
 function Home(props: Props) {
   return (
     <>
-      <HomeHeader />
+      <HomeHeader 
+        currentCategory={props.currentCategory}
+        setCurrentCategory={props.setCurrentCategory}
+      />
     </>
   );
 }

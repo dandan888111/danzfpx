@@ -1,11 +1,25 @@
+/*
+ * @Description: 
+ * @Author: dandan.Wu
+ * @Date: 2021-01-20 12:43:29
+ * @LastEditTime: 2021-01-25 13:46:55
+ * @LastEditors: dandan.Wu
+ */
 import { AnyAction } from "redux";
 import { HomeState } from '@/typings/state'
+import * as actionTypes from '@/store/action-types'; 
 
- 
-const initialState: HomeState = {};
+const initialState: HomeState = {
+  currentCategory: 'all'
+};
 export default function (
   state: HomeState = initialState,
   action: AnyAction
 ): HomeState {
-  return state;
+  switch(action.type) {
+    case actionTypes.SET_CURRENT_CATEGORY:
+      return {...state, currentCategory: action.payload}
+    default:
+      return state;
+  }
 }
