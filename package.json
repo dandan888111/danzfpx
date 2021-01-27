@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server", 
+    "dev": "webpack-dev-server",
     "push-dandan": "git add -A && git commit -m 'update' && git push origin master -f && git push zhugan HEAD:master -f"
   },
   "keywords": [],
@@ -23,7 +23,6 @@
     "@types/redux-logger": "^3.0.8",
     "@types/redux-promise": "^0.5.29",
     "antd": "^4.10.3",
-    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
     "connected-react-router": "^6.8.0",
@@ -47,6 +46,7 @@
   "devDependencies": {
     "@types/classnames": "^2.2.11",
     "autoprefixer": "^10.2.1",
+    "axios": "^0.21.1",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.1",
